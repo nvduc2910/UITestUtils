@@ -1,0 +1,40 @@
+PODS:
+  - Embassy (4.1.1)
+  - EnvoyAmbassador (4.0.5):
+    - Embassy (~> 4.0)
+  - ObjectMapper (3.5.2)
+  - Then (2.6.0)
+  - UITestUtils (1.0.0):
+    - Embassy (~> 4.1.1)
+    - EnvoyAmbassador (~> 4.0.5)
+    - ObjectMapper (~> 3.5.2)
+    - Then (~> 2.6.0)
+
+DEPENDENCIES:
+  - Embassy
+  - EnvoyAmbassador
+  - ObjectMapper (~> 3.5)
+  - Then
+  - UITestUtils (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Embassy
+    - EnvoyAmbassador
+    - ObjectMapper
+    - Then
+
+EXTERNAL SOURCES:
+  UITestUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Embassy: eb36dc783ea20b792426461bbaff8c3f256e0331
+  EnvoyAmbassador: 21cef10e70d003801c68ba5281948684a4e25486
+  ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
+  Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
+  UITestUtils: c177ae7ec797095f78a70909307d3f939782ac4b
+
+PODFILE CHECKSUM: 491c73db220c930b119583a8041ce47f5cf3cfaa
+
+COCOAPODS: 1.9.1

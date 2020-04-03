@@ -1,11 +1,15 @@
 use_frameworks!
 
 target 'UITestUtils_Example' do
+  
   pod 'UITestUtils', :path => '../'
-
+  pod 'Embassy'
+  pod 'EnvoyAmbassador'
+  pod 'ObjectMapper', '~> 3.5'
+  pod 'Then'
+  
   target 'UITestUtils_Tests' do
     inherit! :search_paths
-
     
   end
 end

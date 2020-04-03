@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'UITestUtils'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of UITestUtils.'
+  s.version          = '1.0.0'
+  s.summary          = 'Utility support write UI Testing in iOS'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/nvduc2910/UITestUtils.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'UITestUtils/Classes/**/*'
   
@@ -38,5 +38,20 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  
+  s.framework = "XCTest"
+  s.requires_arc = true
+  s.user_target_xcconfig = { 'FRAMEWORK_SEARCH_PATHS' => '$(PLATFORM_DIR)/Developer/Library/Frameworks' }
+  s.pod_target_xcconfig = {
+    'APPLICATION_EXTENSION_API_ONLY' => 'YES',
+    'ENABLE_BITCODE' => 'NO',
+    'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
+  }
+  
+  s.swift_versions = ['4.2', '5.0']
+  
+  s.dependency 'Embassy', '~> 4.1.1'
+  s.dependency 'EnvoyAmbassador', '~> 4.0.5'
+  s.dependency 'ObjectMapper', '~> 3.5.2'
+  s.dependency 'Then', '~> 2.6.0'
 end
