@@ -93,7 +93,7 @@ open func expectToSee(_ element: XCUIElement,
       } else {
         XCTAssertTrue(element.waitForExistence(timeout: timeout), file: file, line: line)
       }
-    }
+ }
 ```
 
 ```swift
@@ -108,7 +108,7 @@ open func expectNotToSee(_ element: XCUIElement,
       } while !result && Date().timeIntervalSince1970 < date.timeIntervalSince1970
 
       XCTAssertTrue(result, file: file, line: line)
-    }
+}
 ```
 
 ```swift
@@ -121,7 +121,7 @@ open func enterText(_ text: String, into element: XCUIElement, _ file: StaticStr
 
       guard let value = element.value as? String else { return XCTFail(file: file, line: line) }
       XCTAssertEqual(value, text, file: file, line: line)
-    }
+}
 ```
 
 
