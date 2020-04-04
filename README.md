@@ -11,7 +11,7 @@ Utility support write UI Testing for Swift
 
 Supporting local server by [Embassy](https://github.com/envoy/Embassy) and [Ambassador](https://github.com/envoy/Ambassador)
 
-```
+```swift
 router["/api/v2/users"] = DelayResponse(JSONResponse(handler: { _ -> Any in
     return [
         ["id": "01", "name": "john"],
@@ -22,7 +22,7 @@ router["/api/v2/users"] = DelayResponse(JSONResponse(handler: { _ -> Any in
 
 JSONString response support
 
-```
+```swift
 router["/api/v2/users"] = DelayResponse(JSONStringResponse(handler: { _ -> Any in
     return """
         {
