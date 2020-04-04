@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/nvduc2910/UITestUtils.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '12.1'
 
   s.source_files = 'UITestUtils/Classes/**/*'
   
@@ -48,7 +48,12 @@ TODO: Add long description of the pod here.
     'OTHER_LDFLAGS' => '$(inherited) -Xlinker -no_application_extension',
   }
   
-  s.swift_versions = ['4.2', '5.0']
+  s.cocoapods_version = '>= 1.4.0'
+  if s.respond_to?(:swift_versions) then
+    s.swift_versions = ['4.2', '5.0']
+  else
+    s.swift_version = '4.2'
+  end
   
   s.dependency 'Embassy', '~> 4.1.1'
   s.dependency 'EnvoyAmbassador', '~> 4.0.5'
