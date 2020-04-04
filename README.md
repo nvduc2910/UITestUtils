@@ -14,7 +14,7 @@ Supporting local server by [Embassy](https://github.com/envoy/Embassy) and [Amba
 ```swift
 func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+
         let arguments = ProcessInfo.processInfo.arguments
         for argument in arguments {
             switch argument {
@@ -25,7 +25,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
             }
         }
         return true
-    }
+}
 ```
 
 ```swift
