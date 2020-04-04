@@ -20,6 +20,19 @@ router["/api/v2/users"] = DelayResponse(JSONResponse(handler: { _ -> Any in
 }))
 ```
 
+JSONString response support
+
+```
+router["/api/v2/users"] = DelayResponse(JSONStringResponse(handler: { _ -> Any in
+            return """
+                {
+                  "acess_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+                }
+            """
+        }))
+```
+
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
