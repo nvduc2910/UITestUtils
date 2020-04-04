@@ -2,6 +2,7 @@ PODS:
   - Embassy (4.1.1)
   - EnvoyAmbassador (4.0.5):
     - Embassy (~> 4.0)
+  - MBProgressHUD (1.2.0)
   - ObjectMapper (3.5.2)
   - Then (2.6.0)
   - UITestUtils (1.0.0):
@@ -13,6 +14,7 @@ PODS:
 DEPENDENCIES:
   - Embassy
   - EnvoyAmbassador
+  - MBProgressHUD (~> 1.2.0)
   - ObjectMapper (~> 3.5)
   - Then
   - UITestUtils (from `../`)
@@ -21,6 +23,7 @@ SPEC REPOS:
   trunk:
     - Embassy
     - EnvoyAmbassador
+    - MBProgressHUD
     - ObjectMapper
     - Then
 
@@ -31,10 +34,11 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Embassy: eb36dc783ea20b792426461bbaff8c3f256e0331
   EnvoyAmbassador: 21cef10e70d003801c68ba5281948684a4e25486
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   ObjectMapper: b53ae947d370bf89423e86be7d4e2d2b2a8d3f40
   Then: 90cd104fd951cec1980a03f57704ad8f784d4d79
-  UITestUtils: c177ae7ec797095f78a70909307d3f939782ac4b
+  UITestUtils: 976f1991d3b89c1f4bad8203eb187f94ab609d0c
 
-PODFILE CHECKSUM: 491c73db220c930b119583a8041ce47f5cf3cfaa
+PODFILE CHECKSUM: f09e891d9fab7fb9caacf378fa64451b762d7bca
 
 COCOAPODS: 1.9.1

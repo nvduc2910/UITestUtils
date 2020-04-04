@@ -7,9 +7,24 @@ target 'UITestUtils_Example' do
   pod 'EnvoyAmbassador'
   pod 'ObjectMapper', '~> 3.5'
   pod 'Then'
+  pod 'MBProgressHUD', '~> 1.2.0'
   
   target 'UITestUtils_Tests' do
     inherit! :search_paths
-    
+    pod 'UITestUtils', :path => '../'
+    pod 'Then'
+    pod 'Embassy'
+    pod 'EnvoyAmbassador'
+    pod 'MBProgressHUD', '~> 1.2.0'
   end
+  
+  target 'UITestUtils_ExampleUITests' do
+    inherit! :search_paths
+    pod 'UITestUtils', :path => '../'
+    pod 'Then'
+    pod 'Embassy'
+    pod 'EnvoyAmbassador'
+    pod 'MBProgressHUD', '~> 1.2.0'
+  end
+  
 end
