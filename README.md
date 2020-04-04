@@ -5,6 +5,21 @@
 [![License](https://img.shields.io/cocoapods/l/UITestUtils.svg?style=flat)](https://cocoapods.org/pods/UITestUtils)
 [![Platform](https://img.shields.io/cocoapods/p/UITestUtils.svg?style=flat)](https://cocoapods.org/pods/UITestUtils)
 
+Utility support write UI Testing for Swift
+
+## Local HTTP Server
+
+Supporting local server by [Embassy](https://github.com/envoy/Embassy) and [Ambassador](https://github.com/envoy/Ambassador)
+
+```
+router["/api/v2/users"] = DelayResponse(JSONResponse(handler: { _ -> Any in
+    return [
+        ["id": "01", "name": "john"],
+        ["id": "02", "name": "tom"]
+    ]
+}))
+```
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
