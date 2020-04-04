@@ -62,7 +62,7 @@ Page Object Model Design pattern
             .then { _ in
                 XCTAssert(loginPage.invalidPasswordAlert.exists)
             }
-    }
+}
 ```
 
 AccessId support
