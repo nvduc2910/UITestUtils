@@ -10,6 +10,8 @@ import Foundation
 import XCTest
 import UITestUtils
 import Then
+import Embassy
+import EnvoyAmbassador
 
 class LoginPageTest: BaseUITestCase {
     

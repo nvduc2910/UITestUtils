@@ -11,13 +11,6 @@ import XCTest
 import Then
 import UITestUtils
 
-protocol LoginUITestableType {
-    
-    var userNameTextField: XCUIElement { get }
-    var passwordTextField: XCUIElement { get }
-    var loginButton: XCUIElement { get }
-}
-
 class LoginUITestable: UIElementPage<UIElements.LoginUIElements> {
 
     private(set) lazy var userNameTextField = self.textField(.userNameTextField)
